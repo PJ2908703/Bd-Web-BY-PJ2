@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .division-card {
+    width: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: white;
+    text-align: center;
+  }
+
+  .card-top {
+    background: orange;
+    height: 20px;
+  }
+
+  .division-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 12px;
+  }
+
+  .card-content h4 {
+    font-weight: bold;
+    margin: 8px 0;
+  }
+
+  .card-content h6 {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .card-content a button {
+    background: gold;
+    border: none;
+    padding: 8px 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .card-content a button:hover {
+    background: orange;
+  }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: linear-gradient(90deg, #00ffff, #00cccc);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* LOGO */
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* MENU */
+        .nav-links {
+            display: flex;
+            gap: 18px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #003333;
+            text-decoration: underline;
+        }
+
+        /* SEARCH BAR */
+        .search-box {
+            display: flex;
+            gap: 5px;
+        }
+
+        .search-box input {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            background: white;
+            color: #00aaaa;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .search-box button:hover {
+            background: #e0ffff;
+        }
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" width="60px" height="60px"  alt="logo">
+            Bangladesh
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="introtobangladesh.html">Intro to Bangladesh</a>
+            <a href="image.html">Images</a>
+            <a href="history.html">History</a>
+            <a href="present.html">Present</a>
+            <a href="card.html">Website</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search history...">
+            <button>Search</button>
+        </div>
+    </nav>
+
+<div class="cards-container">
+
+  <!-- Dhaka -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPxBUO7q37-35ATxQCqBI406RzoL5OcMk2qg&s">
+    <div class="card-content">
+      <h4>Dhaka</h4>
+      <h6>Capital city and economic center</h6>
+      <a href="https://www.dhaka.gov.bd" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Chattogram -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://www.shutterstock.com/image-photo/chattogrambangladesh-19th-january-2025-chattogram-260nw-2586670237.jpg">
+    <div class="card-content">
+      <h4>Chattogram</h4>
+      <h6>Port city with hills and sea</h6>
+      <a href="https://www.chattogram.gov.bd" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Rajshahi -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjSfJ88vZkVQs04lUicP9D7FCDRoZT6QqwuA&s">
+    <div class="card-content">
+      <h4>Rajshahi</h4>
+      <h6>Known for silk and mangoes</h6>
+      <a href="https://www.rajshahi.gov.bd" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Khulna -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://propertyguide.com.bd/_next/image?url=https%3A%2F%2Fpropertyguide-store.s3.ap-southeast-1.amazonaws.com%2Fbikroy%2Fmedium_Shahid_Hadis_Park_05c85ee74e.jpg&w=3840&q=75">
+    <div class="card-content">
+      <h4>Khulna</h4>
+      <h6>Gateway to the Sundarbans</h6>
+      <a href="https://www.khulna.gov.bd" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Barishal -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://elements-resized.envatousercontent.com/elements-video-cover-images/936efcca-2b5d-4c1d-b5f9-c1c5ddf0f768/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=208ff30f7f2632e7c971db9435b12748efb544c70cf85fd65346f2598750e07a">
+    <div class="card-content">
+      <h4>Barishal</h4>
+      <h6>Riverine land with floating markets</h6>
+      <a href="https://www.barisaldiv.gov.bd/en" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sylhet -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://grandsylhet.com/wp-content/uploads/elementor/thumbs/wmremove-transformed-1-r4e9tivz9nke0dx3pgf50sfny771k4w5amwb17u0lw.jpeg">
+    <div class="card-content">
+      <h4>Sylhet</h4>
+      <h6>Tea gardens and green hills</h6>
+      <a href="https://www.sylhet.gov.bd" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Rangpur -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://cdn.britannica.com/93/140293-050-09134FEF/Tajhat-Palace-Rangpur-Bangl.jpg">
+    <div class="card-content">
+      <h4>Rangpur</h4>
+      <h6>Agricultural hub of northern Bangladesh</h6>
+      <a href="https://www.rangpur.gov.bd" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mymensingh -->
+  <div class="division-card">
+    <div class="card-top"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNDjl0UdB2fumnG6EHZnCI2Dq2VL4XAZYCQ&s">
+    <div class="card-content">
+      <h4>Mymensingh</h4>
+      <h6>Educational and cultural heritage area</h6>
+      <a href="https://www.mymensingh.gov.bd" target="_blank">
+        <button>Visit</button>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
