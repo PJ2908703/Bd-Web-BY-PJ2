@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacts - Bangladesh</title>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #006a4e 0%,   /* Bangladesh green */
+        #006a4e 45%,
+        #c8102e 55%,  /* Bangladesh red */
+        #c8102e 100%
+    );
+}
+
 
         /* NAVBAR */
         .navbar {
@@ -19,14 +27,25 @@
             justify-content: space-between;
         }
 
-        /* LOGO */
         .logo {
-            color: white;
             font-size: 20px;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        /* MENU */
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .country-name {
+    color: #0077cc; /* Blue color */
+    font-weight: bold;
+}
+
+
         .nav-links {
             display: flex;
             gap: 18px;
@@ -45,7 +64,6 @@
             text-decoration: underline;
         }
 
-        /* SEARCH BAR */
         .search-box {
             display: flex;
             gap: 5px;
@@ -71,15 +89,65 @@
         .search-box button:hover {
             background: #e0ffff;
         }
+
+        /* MAIN CONTENT */
+        .contact-container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            color: #00cccc;
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            font-size: 16px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .contact-container a {
+            color: #0077cc; /* Blue links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Highlight phone numbers */
+        .phone {
+            color: #0077cc;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: linear-gradient(90deg, #00cccc, #00ffff);
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
     </style>
 </head>
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" width="60px" height="60px"  alt="logo">
-            Bangladesh
+            <img src="unnamed67.jpg" width="50" alt="logo">
+            <span class="country-name">Explore Universe</span>
         </div>
-
         <div class="nav-links">
             <a href="index.html">🏠Home</a>
             <a href="introtobangladesh.html">Intro to Bangladesh</a>
@@ -88,14 +156,37 @@
             <a href="present.html">Present</a>
             <a href="card.html">Website</a>
             <a href="contacts.html">Contacts</a>
-
         </div>
-
         <div class="search-box">
             <input type="text" placeholder="Search history...">
             <button>Search</button>
         </div>
     </nav>
 
+    <!-- CONTACT INFO -->
+    <div class="contact-container">
+        <h1>Contact Information</h1>
+        <p><strong>Contact:</strong> <span class="phone">+8801712493711</span> or <span class="phone">+8801704599012</span></p>
+        <p><strong>Country:</strong> <span class="country-name">Bangladesh</span></p>
+        <p><strong>Email:</strong> <a href="mailto:preojit2012@gmail.com">preojit2012@gmail.com</a> or <a href="mailto:pranjitca2@gmail.com">pranjitca2@gmail.com</a></p>
+        <p><strong>Discord:</strong> <a href="https://discord.com/users/preojit.maharudra_47417" target="_blank">preojit.maharudra_47417</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/preojit.maharudra_67/" target="_blank">Preojit.maharudra_67</a></p>
+        <p><strong>Roblox:</strong> 
+    <a href="https://www.roblox.com/users/9260022265/profile" target="_blank">Sickdream_116</a> 
+    or 
+    <a href="https://www.roblox.com/users/9190827899/profile" target="_blank">Sickdream_114</a>
+</p>
+<p><strong>YouTube Channel:</strong> 
+    <a href="https://www.youtube.com/channel/UCox-17jnQ3jenvzZeAvw5ww" target="_blank">ArtNPlay Bros</a>
+</p>
+
+
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        Explore Bangladesh – Designed by Maharudra Paul Preojit
+    </footer>
 </body>
 </html>

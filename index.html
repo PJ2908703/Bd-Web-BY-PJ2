@@ -6,10 +6,17 @@
     <title>Cyan Navbar</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #006a4e 0%,   /* Bangladesh green */
+        #006a4e 45%,
+        #c8102e 55%,  /* Bangladesh red */
+        #c8102e 100%
+    );
+}
 
         /* NAVBAR */
         .navbar {
@@ -74,8 +81,45 @@
         }
 
         h5{
-            color: blue;
+            color: Lime;
         }
+/* MOVING TEXT CONTAINER */
+.moving-text-container {
+    width: 100vw;        /* full browser width */
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+/* MOVING TEXT */
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    color: yellow;
+   animation: moveRightToLeft 12s linear infinite; /* faster speed */
+}
+
+/* RIGHT → LEFT (BORDER TO BORDER) */
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100vw); /* start at right border */
+    }
+    100% {
+        transform: translateX(-100%); /* stop at left border */
+    }
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(90deg, #00cccc, #00ffff);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+
     </style>
 </head>
 
@@ -83,8 +127,8 @@
 
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" width="60px" height="60px"  alt="logo">
-            Bangladesh
+            <img src="unnamed67.jpg" width="60px" height="60px"  alt="logo">
+            Explore Universe
         </div>
 
         <div class="nav-links">
@@ -104,8 +148,19 @@
         </div>
     </nav>
 
-    <h1>Welcome to Explore Bangladesh</h1>
+<div class="moving-text-container">
+    <h1 class="moving-text">
+        Welcome to Explore Bangladesh 🌍
+    </h1>
+</div>
+
     <p>Welcome to Explore Bangladesh, a website created to discover the beauty, history, culture, and national identity of Bangladesh. This site is designed to help students and visitors learn about our country in a simple and interesting way.</p>
-    <h5>Click on the buttons on the navbar to go to the next pg.</h5>
+    <h5>Click on the buttons on the navbar to go to the next pg.</h5><br><br><br><br><br><br><br><br>
+    
+    
+    <footer class="footer">
+    Explore Bangladesh – Designed by Maharudra Paul Preojit
+</footer>
+
 </body>
 </html>
