@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyan Navbar</title>
+    <title>Bangladesh</title>
 
     <style>
         body {
@@ -11,40 +11,110 @@
             font-family: Arial, sans-serif;
         }
 
-        /* NAVBAR */
-        .navbar {
-            background: linear-gradient(90deg, #00ffff, #00cccc);
-            padding: 12px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+        /* ===== STICKY NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-        /* LOGO */
-        .logo {
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-        }
+    background: linear-gradient(
+        90deg,
+        rgba(0,106,78,0.95),
+        rgba(200,16,46,0.95)
+    );
 
-        /* MENU */
-        .nav-links {
-            display: flex;
-            gap: 18px;
-        }
+    height: 80px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
 
-        .nav-links a:hover {
-            color: #003333;
-            text-decoration: underline;
-        }
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* MENU BUTTON (MOBILE) */
+.menu-btn {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE (MOBILE & TABLET) ===== */
+@media (max-width: 900px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(
+            180deg,
+            rgba(0,106,78,0.97),
+            rgba(200,16,46,0.97)
+        );
+
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 20px 0;
+
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+/* ===== FOOTER (RESTORED) ===== */
+.footer {
+    background: linear-gradient(
+        90deg,
+        rgba(0,106,78,0.95),
+        rgba(200,16,46,0.95)
+    );
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px;
+}
 
       
 
@@ -87,46 +157,6 @@ body {
     );
 }
 
-
-/* FOOTER */
-.footer {
-    background: linear-gradient(90deg, #00cccc, #00ffff);
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 40px;
-    width: 100%;
-}
-.navbar {
-    background: linear-gradient(
-        90deg,
-        rgba(0, 106, 78, 0.95),   /* Bangladesh green */
-        rgba(200, 16, 46, 0.95)   /* Bangladesh red */
-    );
-    padding: 14px 22px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
-    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
-}
-.footer {
-    background: linear-gradient(
-        90deg,
-        rgba(200, 16, 46, 0.95),  /* Bangladesh red */
-        rgba(0, 106, 78, 0.95)    /* Bangladesh green */
-    );
-    color: white;
-    text-align: center;
-    padding: 18px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 50px;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.35);
-    border-top: 3px solid rgba(255, 255, 255, 0.2);
-}
 
     </style>
 </head>
@@ -176,6 +206,10 @@ body {
 <footer class="footer">
     Explore Bangladesh – Designed by Maharudra Paul Preojit
 </footer>
-
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
 </body>
 </html>
